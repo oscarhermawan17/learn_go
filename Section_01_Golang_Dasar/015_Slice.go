@@ -34,7 +34,7 @@ func main() {
 	// months[4] = "Diubah"   // be carefull when change the array
 	// fmt.Println(slice1)
 
-	var slice2 = months[10:] // try this [2:4] and see the difference
+	var slice2 = months[11:] // this will use new array, but try this [2:4] and see the difference
 	fmt.Println(slice2)
 
 	var slice3 = append(slice2, "Eko")
