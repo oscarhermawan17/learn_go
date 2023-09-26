@@ -30,4 +30,18 @@ func main() {
 	fmt.Println(slice1)
 	fmt.Println(len(slice1)) // length of slice1 = 3
 	fmt.Println(cap(slice1)) // capacity of slice1 = 8
+
+	// months[4] = "Diubah"   // be carefull when change the array
+	// fmt.Println(slice1)
+
+	var slice2 = months[10:] // try this [2:4] and see the difference
+	fmt.Println(slice2)
+
+	var slice3 = append(slice2, "Eko")
+	fmt.Println(slice3)
+	slice3[1] = "Bukan Desember"
+	fmt.Println(slice3)
+
+	fmt.Println(slice2)
+	fmt.Println(months)
 }
